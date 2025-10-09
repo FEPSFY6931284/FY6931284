@@ -70,7 +70,7 @@
 
           const commits = await response.json(); 
           if (commits && commits.length > 0) {
-            const lastCommitDate = new Date(commits[0].commit.commiter.date);
+            const lastCommitDate = new Date(commits[0].commit.committer.date);
 
             // Displaying the time on load 
             document.getElementById('last-updated').innerText = `Last modified time: ${lastCommitDate.toLocaleString()}`;
@@ -85,7 +85,7 @@
 
       // Function to verify the last update time by re-fetching it from the API 
       async function verifyLastUpdatedTime() {
-        document.getElementbyId('last-updated').innerText = 'Verifying...';
+        document.getElementById('last-updated').innerText = 'Verifying...';
         await getLastUpdatedTime();
         alert("Last modified time has been successfully verified from GitHub API.");
       }
