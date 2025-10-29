@@ -125,36 +125,27 @@
     </p>
     <p id="ex1">
     <pre>
-      Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-      intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-      learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-      candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-      to improve the classification model. Various strategies have been proposed including; Query by
-      Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-      sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-      2001).
+      <h1>TODO</h1>
     </pre>
     </p>
 
     <p>
       <h3 id="Introduction">Introduction</h3>
     </p>
-    <p>
+    <p align="justify">
     <pre>
-      “Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-      intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-      learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-      candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-      to improve the classification model. Various strategies have been proposed including; Query by
-      Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-      sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-      2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-      presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-      labels. After adding the newly labeled instances to the current training set, a revised model is
-      subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-      learning at each epoch. The process is continued until some stopping criterion has been met, such as
-      reaching a stage where information from the selected instances is contrary to the model, causing the
-      classifier confidence to drop, as in Vlachos (2008).”
+      Modern computers have been around for the best part of 50 years, constantly improving year by year and have 
+      become something that we, as a species, seem to not be able to live without. They allow organisations, such as 
+      the NHS, to have access to patient records digitally and even remotely monitor patients to name a few examples (NHS, 2025). 
+      The idea of quantum computing (QC) is something that has been around for a similar amount of time but have only 
+      really gained significant attraction over the last decade or so. Unlike digital computers which use bits and can be 
+      either 1 or 0, quantum computers utilise qubits and a property called superposition (another being entanglement) which allows 
+      it to be 1, 0 or a superposition of these states, allowing them to be both values at the same time (Sood, S. K. & Pooja, 2024). 
+      This property allows calculations to be done on extremely large scales which in turn can have a highly positive effect 
+      on the healthcare industry in the UK from drug discovery to medical imaging. In December 2024, a quantum research hub 
+      opened at UCL in London to explore how quantum technologies can be used to “improve early diagnosis and treatment of disease”, 
+      showing that the UK aims to be a key player within this field (UCL, 2024). This paper aims to investigate how 
+      these technologies can transform medicine within the UK with a focus on drug development and medical imaging. 
     </pre>
     </p>
     
@@ -162,23 +153,64 @@
     <h3 id="Analysis and Discussion">Analysis and Discussion</h3>
     </p>
 
-    <p>
+    <p align="justify">
     <pre>
-      “Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an
-      intelligent machine through the interaction of an oracle with the machine system, over a sequence of
-      learning epochs. A distinctive component in an active system is the querying strategy, used to sample
-      candidate training instances from a pool and evaluate them for informativeness, i.e., their potential
-      to improve the classification model. Various strategies have been proposed including; Query by
-      Committee (Seung et al., 1992), Monte Carlo estimation (Roy and McCallum, 2001), uncertainty
-      sampling (Lewis and Gale, 1994) and version space reduction (margin sampling) (Tong and Koller,
-      2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are
-      presented for labeling, to a machine (database) or human oracle that has knowledge of the class
-      labels. After adding the newly labeled instances to the current training set, a revised model is
-      subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of
-      learning at each epoch. The process is continued until some stopping criterion has been met, such as
-      reaching a stage where information from the selected instances is contrary to the model, causing the
-      classifier confidence to drop, as in Vlachos (2008).”
+      Subheading – Drug discovery and development:
+      
+      Within the current landscape, drug discovery and development is something that can take years or even decades
+      to reach the final product for consumers to use. In their paper, Kumar et al. (2024) state that pricing is a 
+      major factor in the current climate with “costs potentially soaring to a staggering one billion dollars”.  
+      With QC, the timescale and costs are greatly reduced by expediting the discovery of these new medicines. 
+      
+      Currently when drugs are being developed, classical computers are greatly limited by their computational 
+      power; quantum computers give us the ability to simulate quantum systems, down to the molecular level. Drugs 
+      work by binding to proteins within the body and then having a therapeutic effect on the patient. There may 
+      be hundreds of drug candidates for a specific cause that react with a particular protein that would take a 
+      classical computer too much time that you don’t have, however a quantum computer could identify the right 
+      candidate much more effectively (Singal, 2025). Within the UK, The Hartree Centre, based in Warrington, have 
+      recently been investigating the possibilities of QC for drug development alongside AstraZeneca (also a UK company) 
+      and IBM. In a recent blog post, they have stated that QC can explore nuclear quantum effects and how they 
+      can affect the production of pharmaceutical ingredients – recording the effects may assist in optimising the 
+      efficiency of drug manufacturing (Hartree Centre, 2025). There is still a long way to go with fully implementing 
+      QC into the complete process of drug discovery and development, but this shows that there is definite optimism 
+      within the space. 
+
+      Subheading: Medical Imaging and Diagnostics
+      
+      There is no denying that since the early 2000s, the quality of medical imaging and diagnostics has changed in a 
+      dramatic way, enabling medical professionals to understand what is going on with their patients in detail to ensure 
+      that the right outcomes are made. QC has the ability to potentially enhance what we can currently view, aiding in 
+      early disease detection but also with greater confidence.
+      
+      Current examples of equipment used for medical imaging and diagnostic include MRIs (magnetic resonance imaging), 
+      which utilises superconducting magnets and radio waves to image the body via quantum effects, and PET (positron 
+      emission tomography) scanners, which uses positrons and gamma rays to image the body (Gonzalez, 2019). Using MRI 
+      as an example, as they employ the use of magnets, fluctuations in the fields can cause “errors and disturbances 
+      in scans” (Photonics, 2025). Within the article, they discuss the use of quantum optical sensors to reduce these 
+      disturbances by mapping the location of the disturbance and calculating how the disturbance affects the field. This
+      data can then be used to correct the image, resulting in higher quality imagery and/or spending less time to get
+      similar quality to what we are used to today. Within the UK, a paper published in 2024 by Innovate UK and UK National
+      Quantum Technologies Programme goes into great detail about how quantum computer/technologies can assist in body
+      imaging (Innovate UK et al., 2024). In the paper, the consortium discuss how quantum technologies can be used for
+      brain imaging for epilepsy, Parkinson’s and dementia, treatment for brain cancers using quantum tunnelling (particles
+      moving through energy barriers) to directly attack cancer cells and also the ability to sense strokes. This is 
+      just one of the many areas explored within the paper which shows the UK’s commitment to utilising quantum for 
+      the benefit of the UK and beyond. 
     </pre>
+    </p>
+
+    <p>
+    <h3 id="Conclusion">Conclusion</h3>
+    </p>
+
+    <p align="justify">
+      <pre>
+        The use of quantum technologies within the healthcare sector can clearly be used in a way that would immensely 
+        improve people’s lives, and it is evident that the UK wants to be a world leader within this space and be at the 
+        forefront of these exciting developments. With continued funding and interest in this sector, this could become a 
+        reality. Currently, everything is still very much in an experimental phase, however it’ll only be a matter of time 
+        before these systems become fully integrated within the UK’s healthcare system. 
+      </pre>
     </p>
 
     <p>
@@ -187,6 +219,19 @@
 
     <p>
     <pre>
+      TODO: Format properly
+      
+      NHS (2025) Applications and benefits. Available at: https://digital.nhs.uk/services/networks-and-connectivity-transformation-frontline-capabilities/connectivity-hub/advice-and-guidance/introduction-to-wireless-technologies-in-health/applications-and-benefits (Accessed: 22nd October 2025)
+      Singal, S (2025) How quantum computing is revolutionising drug development. Available at: https://www.ddw-online.com/how-quantum-computing-is-revolutionising-drug-development-34423-202504/ (Accessed: 22nd October 2025) 
+      Sood, S. K. & Pooja (2024) Quantum Computing Review: A Decade of Research. IEEE transactions on engineering management. [Online] 716662–6676.
+      Kumar, G., Yadav, S., Mukherjee, A., Vikas Hassija and Mohsen Guizani (2024). ‘Recent Advances in Quantum Computing for Drug Discovery and Development’. IEEE Access, pp.1–15. doi:https://doi.org/10.1109/access.2024.3376408.
+      Hartree Centre (2025) Supporting quantum computing in the UK pharmaceutical industry. Available at: https://www.hartree.stfc.ac.uk/blog/2025/10/07/supporting-quantum-computing-in-the-uk-pharmaceutical-industry/ (Accessed: 22nd October 2025) 
+      Gonzalez, A (2019) MRI vs. PET Scan. Available at: https://www.healthline.com/health/mri-vs-pet-scan (Accessed: 25th October 2025)
+      Photonics (2024) Quantum Optical Sensor Aims to Increase MRI Scan Quality, Speed. Available at: https://www.photonics.com/Articles/Quantum-Optical-Sensor-Aims-to-Increase-MRI-Scan/a69988 (Accessed: 25th October 2025)
+      Innovate UK, UK National Quantum Technologies Programme (2024) Quantum for Life: How UK life sciences and healthcare can benefit from quantum technologies. Available at: https://iuk-business-connect.org.uk/wp-content/uploads/2024/10/Innovate-UK-Quantum-for-Life.pdf (Accessed: 25th October 2025) 
+      UCL (2024) Quantum research hub for healthcare is launched. Available at: https://www.ucl.ac.uk/mathematical-physical-sciences/news/2024/dec/quantum-research-hub-healthcare-launched (Accessed: 26th October 2025)
+
+      
       Sample references:
       
       Bloggs, J. (2013). 'The key issue'. [Cartoon]. The Times, 20 January, p.56.
