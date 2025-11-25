@@ -114,10 +114,11 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("AnalysisDiscussion");
+    const AnalysisCount1 = displayWordCount("AnalysisDiscussion1");
+    const AnalysisCount2 = displayWordCount("AnalysisDiscussion2");
     const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -187,7 +188,7 @@
 
     <h3>Analysis and Discussion</h3>
       <h4>Drug discovery and development:</h4>
-      <p id="AnalysisDiscussion">
+      <p id="AnalysisDiscussion1">
       Within the current landscape, drug discovery and development is something that can take years or even decades
       to reach the final product for consumers to use. In their paper, <a href="#References">Kumar et al. (2024)</a> state that pricing is a 
       major factor in the current climate with “costs potentially soaring to a staggering one billion dollars”.  
@@ -208,7 +209,7 @@
       </p>
     
       <h4>Medical imaging and diagnostics:</h4>
-      <p id="AnalysisDiscussion">
+      <p id="AnalysisDiscussion2">
       There is no denying that since the early 2000s, the quality of medical imaging and diagnostics has changed in a 
       dramatic way, enabling medical professionals to understand what is going on with their patients in detail to ensure 
       that the right outcomes are made. QC has the ability to potentially enhance what we can currently view, aiding in 
