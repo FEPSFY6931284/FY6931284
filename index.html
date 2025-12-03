@@ -114,12 +114,19 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
+    const IntroductionHeading = displayWordCount("IntroductionHeading");
     const IntroductionCount = displayWordCount("Introduction1");
+    const AnalysisDiscussionHeading = displayWordCount("AnalysisDiscussionHeading")
+    const ADHeading1 = displayWordCount("ADHeading1")
+    const ADHeading2 = displayWordCount("ADHeading2")
     const AnalysisCount1 = displayWordCount("AnalysisDiscussion1");
     const AnalysisCount2 = displayWordCount("AnalysisDiscussion2");
+    const ConclusionHeading = displayWordCount("ConclusionHeading");
     const ConclusionCount = displayWordCount("Conclusion");
+
+    const FigureCount = displayWordCount("Figure");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + ConclusionCount;
+    const totalWordCount = IntroductionCount + IntroductionHeading + AnalysisDiscussionHeading + ADHeading1 + ADHeading2 + AnalysisCount1 + AnalysisCount2 + ConclusionHeading + ConclusionCount + FigureCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
@@ -170,7 +177,7 @@
       be a clear frontrunner within this field and implementing it within the healthcare industry. 
     </p>
 
-    <h3 id="Introduction">Introduction</h3>
+    <h3 id="IntroductionHeading">Introduction</h3>
     <p id="Introduction1">
       Modern computers have been around for the best part of 50 years, constantly improving year by year and have 
       become something that we, as a species, seem to not be able to live without. They allow organisations, such as 
@@ -186,11 +193,11 @@
       these technologies can transform medicine within the UK with a focus on drug development and medical imaging. 
 
     <img src="QuantumTable.jpg" style="display:block; margin:auto; margin-top:20px;"/>
-    <p style="margin: auto; text-align:center;">Figure 1: Table of scope of QC at clinical trials (<a href="https://ieeexplore.ieee.org/document/10466774">https://ieeexplore.ieee.org/document/10466774</a>)</p>
+    <p id="Figure" style="margin: auto; text-align:center;">Figure 1: Table of scope of QC at clinical trials (<a href="https://ieeexplore.ieee.org/document/10466774">https://ieeexplore.ieee.org/document/10466774</a>)</p>
   </p>
 
-    <h3 id="AnalysisDiscussion">Analysis and Discussion</h3>
-      <h4>Drug discovery and development:</h4>
+    <h3 id="AnalysisDiscussionHeading">Analysis and Discussion</h3>
+      <h4 id="ADHeading1">Drug discovery and development:</h4>
       <p id="AnalysisDiscussion1">
       Within the current landscape, drug discovery and development is something that can take years or even decades
       to reach the final product for consumers to use. In their paper, <a href="#References">Kumar et al. (2024)</a> state that pricing is a 
@@ -211,7 +218,7 @@
       within the space. 
       </p>
     
-      <h4>Medical imaging and diagnostics:</h4>
+      <h4 id="ADHeading2">Medical imaging and diagnostics:</h4>
       <p id="AnalysisDiscussion2">
       There is no denying that since the early 2000s, the quality of medical imaging and diagnostics has changed in a 
       dramatic way, enabling medical professionals to understand what is going on with their patients in detail to ensure 
@@ -234,7 +241,7 @@
       the benefit of the UK and beyond. 
       </p>
 
-    <h3>Conclusion</h3>
+    <h3 id="ConclusionHeading">Conclusion</h3>
     <p id="Conclusion">
       The use of quantum technologies within the healthcare sector can clearly be used in a way that would immensely 
       improve people’s lives, and it is evident that the UK wants to be a world leader within this space and be at the 
